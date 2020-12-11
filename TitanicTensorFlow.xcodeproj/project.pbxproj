@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1146FB672536F2EB007989F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146FB662536F2EB007989F9 /* main.swift */; };
+		1146FB752536F610007989F9 /* ReadCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146FB742536F610007989F9 /* ReadCSV.swift */; };
+		1146FB782536F62E007989F9 /* TitanicBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146FB772536F62E007989F9 /* TitanicBatch.swift */; };
+		1146FB862537054F007989F9 /* TitanicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146FB852537054F007989F9 /* TitanicModel.swift */; };
+		1146FB892537064E007989F9 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146FB882537064E007989F9 /* Training.swift */; };
+		1146FB8C2537194C007989F9 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146FB8B2537194C007989F9 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,15 @@
 /* Begin PBXFileReference section */
 		1146FB632536F2EB007989F9 /* TitanicTensorFlow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TitanicTensorFlow; sourceTree = BUILT_PRODUCTS_DIR; };
 		1146FB662536F2EB007989F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1146FB702536F59E007989F9 /* train.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = train.csv; sourceTree = "<group>"; };
+		1146FB712536F5AB007989F9 /* dev.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dev.csv; sourceTree = "<group>"; };
+		1146FB742536F610007989F9 /* ReadCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCSV.swift; sourceTree = "<group>"; };
+		1146FB772536F62E007989F9 /* TitanicBatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitanicBatch.swift; sourceTree = "<group>"; };
+		1146FB852537054F007989F9 /* TitanicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitanicModel.swift; sourceTree = "<group>"; };
+		1146FB882537064E007989F9 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		1146FB8B2537194C007989F9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		1146FB8E25372AE3007989F9 /* dev-clean.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dev-clean.csv"; sourceTree = "<group>"; };
+		1146FB8F25372AE4007989F9 /* train-clean.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "train-clean.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +71,16 @@
 		1146FB652536F2EB007989F9 /* TitanicTensorFlow */ = {
 			isa = PBXGroup;
 			children = (
+				1146FB8E25372AE3007989F9 /* dev-clean.csv */,
+				1146FB712536F5AB007989F9 /* dev.csv */,
+				1146FB8F25372AE4007989F9 /* train-clean.csv */,
+				1146FB702536F59E007989F9 /* train.csv */,
 				1146FB662536F2EB007989F9 /* main.swift */,
+				1146FB742536F610007989F9 /* ReadCSV.swift */,
+				1146FB8B2537194C007989F9 /* Test.swift */,
+				1146FB772536F62E007989F9 /* TitanicBatch.swift */,
+				1146FB852537054F007989F9 /* TitanicModel.swift */,
+				1146FB882537064E007989F9 /* Training.swift */,
 			);
 			path = TitanicTensorFlow;
 			sourceTree = "<group>";
@@ -119,7 +142,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1146FB782536F62E007989F9 /* TitanicBatch.swift in Sources */,
+				1146FB752536F610007989F9 /* ReadCSV.swift in Sources */,
+				1146FB862537054F007989F9 /* TitanicModel.swift in Sources */,
 				1146FB672536F2EB007989F9 /* main.swift in Sources */,
+				1146FB892537064E007989F9 /* Training.swift in Sources */,
+				1146FB8C2537194C007989F9 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

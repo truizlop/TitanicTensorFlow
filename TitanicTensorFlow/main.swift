@@ -1,11 +1,14 @@
-//
-//  main.swift
-//  TitanicTensorFlow
-//
-//  Created by Tomás Ruiz López on 14/10/2020.
-//
-
 import Foundation
+import TensorFlow
 
-print("Hello, World!")
+let trainSamples = readTitanic(file: "train-clean")
+let devSamples = readTitanic(file: "dev-clean")
 
+var model = TitanicModel()
+
+Context.local.learningPhase = .training
+train(model: &model,
+      samples: trainSamples)
+
+Context.local.learningPhase = .inference
+test(model: model, with: devSamples)
